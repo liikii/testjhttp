@@ -1,4 +1,4 @@
-## simple java example using java 8
+## simple java example using java 8 and maven
 
 ---
 
