@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 public class App {
     public static void main(String[] args) {
 //        System.setProperty("jsse.enableSNIExtension", "true");
-        String url = "http://www.example.com";
+        String url = "https://www.baidu.com";
 //        HttpClient httpClient = new DefaultHttpClient();
 
         HttpClient httpClient = HttpClientBuilder.create().build();

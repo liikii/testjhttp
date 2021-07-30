@@ -102,3 +102,18 @@ mvn clean
           </configuration>
         </plugin>
 ```
+
+
+#### mvn plugins
+```html
+    <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+      </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
+    </plugins>
+```
