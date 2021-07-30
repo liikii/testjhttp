@@ -2,6 +2,26 @@
 
 ---
 
+#### DOWNLOAD JAVA 8 JDK from this site
+```text
+https://enos.itcollege.ee/~jpoial/allalaadimised/jdk8/
+```
+
+
+#### download maven  
+```text
+https://maven.apache.org/
+```
+
+
+
+#### set JAVA_HOME , ADD java bin directory to PATH. SET MAVEN_HOME 
+```text
+JAVA_HOME
+
+```
+
+
 #### mvn commands:
 ```shell
 mvn archetype:generate -DgroupId=testjhttp -DartifactId=testjhttp
@@ -65,7 +85,7 @@ mvn clean
     <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
           <configuration>
-            <!--这部分可有可无,加上的话则直接生成可运行jar包-->
+            <!--这部分可有可无,加上的话则直接生成可运行jar包, PACKAGE WITH DEPENDENCIES.-->
             <archive>
               <manifest>
                 <mainClass>testjhttp.App</mainClass>
@@ -95,7 +115,7 @@ mvn clean
             <archive>
               <manifest>
                 <addClasspath>true</addClasspath>
-                <mainClass>testjhttp.App</mainClass> <!-- 此处为主入口-->
+                <mainClass>testjhttp.App</mainClass> <!-- 此处为主入口 PROGRAM ENTRY POINT-->
               </manifest>
             </archive>
 
