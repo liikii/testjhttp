@@ -76,6 +76,7 @@
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
           <configuration>
             <!--这部分可有可无,加上的话则直接生成可运行jar包-->
@@ -155,5 +156,16 @@
 <!--        </plugin>-->
       </plugins>
     </pluginManagement>
+
+    <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+      </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+      </plugin>
+  </plugins>
   </build>
 </project>
